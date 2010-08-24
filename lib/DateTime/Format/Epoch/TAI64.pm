@@ -4,13 +4,13 @@ use strict;
 
 use vars qw($VERSION @ISA);
 
-$VERSION = '0.12';
+$VERSION = '0.13';
 
 use DateTime;
 use DateTime::Format::Epoch;
 
 use Params::Validate qw/validate/;
-use Math::BigInt ('lib' => 'GMP,Pari,FastCalc');
+use Math::BigInt ('lib' => $^O eq 'MSWin32' ? 'Pari,FastCalc' : 'GMP,Pari,FastCalc');
 
 @ISA = qw/DateTime::Format::Epoch/;
 

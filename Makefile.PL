@@ -8,7 +8,8 @@ WriteMakefile
           'PREREQ_PM' => {
                            'DateTime' => '0.31',
                            'Math::BigInt' => '1.66',
-                           'Params::Validate' => 0
+                           'Params::Validate' => 0,
+                           'Test::More' => 0
                          },
           'INSTALLDIRS' => 'site',
           'EXE_FILES' => [],
